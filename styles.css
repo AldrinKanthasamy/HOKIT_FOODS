@@ -1,0 +1,401 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #FFF; /* White */
+    border-bottom: 2px solid #FFDDDD; /* Light pink */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    height: 53px;
+    color: #FF6F61; /* Medium brown */
+}
+
+.navbar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #FF6F61; /* Medium brown */
+    font-size: 1em;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #FF6F61; /* Medium brown */
+}
+
+/* Home Section */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #FFDDDD; /* Light pink */
+}
+
+.home-image img {
+    max-width: 50%;
+    height: auto;
+}
+
+.home-text {
+    max-width: 50%;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.service {
+    min-width: 100%;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #FFDDDD; /* Light pink */
+    text-align: center;
+}
+
+/* Book Now Section */
+.book-section {
+    padding: 40px 20px;
+    background-color: #FFF;
+}
+
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFDDDD; /* Light pink */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#booking-form input, #booking-form select, #booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#booking-form button {
+    background-color: #FF6F61; /* Medium brown */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#booking-form button:hover {
+    background-color: #FF3D00; /* Darker brown */
+}
+
+/* Footer Section */
+footer {
+    background-color: #FFDDDD; /* Light pink */
+    color: #333;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-left h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #FF6F61; /* Medium brown */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #FF6F61; /* Medium brown */
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: #FF3D00; /* Darker brown */
+}
+
+/* Footer Section Continued */
+.footer-bottom {
+    border-top: 1px solid #FFDDDD; /* Light pink */
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    #navbar-menu.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #FFF; /* White */
+        border: 1px solid #FFDDDD; /* Light pink */
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center {
+        margin: 10px 0;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: row;
+}
+
+.service {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: Add indicators or navigation if needed */
+.carousel-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 10px;
+    }
+}
+/* Contact Us Section */
+.contact-section {
+    background-color: #FFF; /* White */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFDDDD; /* Light pink */
+    border-radius: 8px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #FF6F61; /* Medium brown */
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.contact-form label {
+    margin: 10px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    color: #FF6F61; /* Medium brown */
+    margin-right: 10px;
+}
+
+.info-item p {
+    margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #FF6F61; /* Medium brown */
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #FF3D00; /* Darker brown */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+

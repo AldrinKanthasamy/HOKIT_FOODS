@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOKIT FOODS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo"><img src="Images/HOKIT_FOODS_LOGO.png" alt="" height="53px"></div>
+        <div class="navbar-menu" id="navbar-menu">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#book">Book Now</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            &#9776;
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div class="home-image">
+            <img src="Images/HOKIT_IMAGE_1.jpg" alt="Home Image">
+        </div>
+        <div class="home-text">
+            <h1>Welcome to HOKIT FOODS</h1>
+            <p>Delicious meals prepared by top chefs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+<section class="services-section" id="services">
+    <h2>Our Services</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide" height="500px" width="500px">
+                <div class="service">
+                    <h1>Homey Food</h1>
+                    <ul>
+                        <p><b>*</b> We deliver quality and home cooked food directly to your home.</p>
+                        <p><b>*</b> Get clean and quality home made food.</p>
+                        <img src="Images/HOKIT_IMAGE_2.jpg" alt="">
+                    </ul>
+                </div>
+                <div class="service">
+                    <h1>Chefit</h1>
+                    <ul>
+                        <p><b>*</b> Delicious homemade food cooked in your kitchen.</p>
+                        <p><b>*</b> Get a trained & verified cook to your home kitchen.</p>
+                        <img src="Images/HOKIT_IMAGE_3.jpg" alt="">
+                    </ul>
+                </div>
+                <div class="service">
+                    <h1>Monthly Subscription</h1>
+                    <ul>
+                        <p><b>*</b> You can hire trained and verified cook for a month.</p>
+                        <p><b>*</b> Cook replacement option and substitute cook in case of leaves.</p>
+                        <img src="Images/HOKIT_IMAGE_4.jpg" alt="">
+                    </ul>
+                </div>
+                <div class="service">
+                    <h1>Chef for Party</h1>
+                    <ul>
+                        <p><b>*</b> Hire professional Chef who specialises in South Indian dishes for any parties.</p>
+                        <img src="Images/HOKIT_IMAGE_5.jpg" alt="">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:contact@hokitfoods.com">contact@hokitfoods.com</a></p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Address: 123 Food Lane, Gourmet City, Yummyland</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Book Now Section -->
+    <section class="book-section" id="book">
+        <h2>Book Now</h2>
+        <form id="booking-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="service">Required Service:</label>
+            <select id="service" name="service" required>
+                <option value="catering">Catering</option>
+                <option value="private-chef">Private Chef</option>
+                <option value="cooking-class">Cooking Class</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>HOKIT FOODS</h2>
+            </div>
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#book">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.example.com" target="_blank" class="social-icon">Social Media</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HOKIT FOODS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
